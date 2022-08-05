@@ -1,0 +1,313 @@
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~
+$ cd 'my-tavel-plans'
+bash: cd: my-tavel-plans: No such file or directory
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~
+$ cd 'my-travel-plans'
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans
+$ git init
+Initialized empty Git repository in C:/Users/aboag/my-travel-plans/.git/
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/aboag/my-travel-plans/.git/
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Readme.md
+        app.css
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git commit -m 'ALX-T project commit'
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Readme.md
+        app.css
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Readme.md
+        app.css
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git commit -m 'initial commit'
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Readme.md
+        app.css
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git add -A
+warning: in the working copy of 'Readme.md', LF will be replaced by CRLF the next time Git touches it
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Readme.md
+        new file:   app.css
+        new file:   index.html
+
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git commit -m 'alx-t project commit'
+[master (root-commit) 31c71f2] alx-t project commit
+ 3 files changed, 83 insertions(+)
+ create mode 100644 Readme.md
+ create mode 100644 app.css
+ create mode 100644 index.html
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log
+commit 31c71f27e72542ff39b9b314248c6f1d9fbf92fa (HEAD -> master)
+Author: Isaac Aboagye Ampem <aboagyeampem@gmail.com>
+Date:   Fri Aug 5 10:29:19 2022 +0000
+
+    alx-t project commit
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ $ git remote add origin
+bash: $: command not found
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git remote add origin https://github.com/aboagyeampem/my-travel-plans.git
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git remote -v
+origin  https://github.com/aboagyeampem/my-travel-plans.git (fetch)
+origin  https://github.com/aboagyeampem/my-travel-plans.git (push)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log
+commit 31c71f27e72542ff39b9b314248c6f1d9fbf92fa (HEAD -> master)
+Author: Isaac Aboagye Ampem <aboagyeampem@gmail.com>
+Date:   Fri Aug 5 10:29:19 2022 +0000
+
+    alx-t project commit
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log --oneline --graph --decorate --all
+* 31c71f2 (HEAD -> master) alx-t project commit
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 944 bytes | 472.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aboagyeampem/my-travel-plans.git
+ * [new branch]      master -> master
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log --oneline --graph --decorate --all
+* 31c71f2 (HEAD -> master, origin/master) alx-t project commit
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ ^C
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ ^C
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log
+commit 31c71f27e72542ff39b9b314248c6f1d9fbf92fa (HEAD -> master, origin/master)
+Author: Isaac Aboagye Ampem <aboagyeampem@gmail.com>
+Date:   Fri Aug 5 10:29:19 2022 +0000
+
+    alx-t project commit
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git remote log
+error: Unknown subcommand: log
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log remote
+fatal: ambiguous argument 'remote': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 801 bytes | 33.00 KiB/s, done.
+From https://github.com/aboagyeampem/my-travel-plans
+ * branch            master     -> FETCH_HEAD
+   31c71f2..0171e6a  master     -> origin/master
+Updating 31c71f2..0171e6a
+Fast-forward
+ app.css | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log --stat
+commit 0171e6a1bb5130cba91f7e85049892aa67fb3a16 (HEAD -> master, origin/master)
+Author: Isaac Aboagye Ampem <68543286+aboagyeampem@users.noreply.github.com>
+Date:   Fri Aug 5 11:14:07 2022 +0000
+
+    Add animations to destination headings
+
+ app.css | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 31c71f27e72542ff39b9b314248c6f1d9fbf92fa
+Author: Isaac Aboagye Ampem <aboagyeampem@gmail.com>
+Date:   Fri Aug 5 10:29:19 2022 +0000
+
+    alx-t project commit
+
+ Readme.md  |  4 ++++
+ app.css    | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html | 24 ++++++++++++++++++++++++
+ 3 files changed, 83 insertions(+)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git fetch origin master
+From https://github.com/aboagyeampem/my-travel-plans
+ * branch            master     -> FETCH_HEAD
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log
+commit 0171e6a1bb5130cba91f7e85049892aa67fb3a16 (HEAD -> master, origin/master)
+Author: Isaac Aboagye Ampem <68543286+aboagyeampem@users.noreply.github.com>
+Date:   Fri Aug 5 11:14:07 2022 +0000
+
+    Add animations to destination headings
+
+commit 31c71f27e72542ff39b9b314248c6f1d9fbf92fa
+Author: Isaac Aboagye Ampem <aboagyeampem@gmail.com>
+Date:   Fri Aug 5 10:29:19 2022 +0000
+
+    alx-t project commit
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$ git log --stat
+commit 0171e6a1bb5130cba91f7e85049892aa67fb3a16 (HEAD -> master, origin/master)
+Author: Isaac Aboagye Ampem <68543286+aboagyeampem@users.noreply.github.com>
+Date:   Fri Aug 5 11:14:07 2022 +0000
+
+    Add animations to destination headings
+
+ app.css | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 31c71f27e72542ff39b9b314248c6f1d9fbf92fa
+Author: Isaac Aboagye Ampem <aboagyeampem@gmail.com>
+Date:   Fri Aug 5 10:29:19 2022 +0000
+
+    alx-t project commit
+
+ Readme.md  |  4 ++++
+ app.css    | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html | 24 ++++++++++++++++++++++++
+ 3 files changed, 83 insertions(+)
+
+aboag@DESKTOP-RGIKDSA MINGW64 ~/my-travel-plans (master)
+$
+
+
+
+IMPORTANT
+Important: make sure to include the --decorate and --all flags
+
+The terminal application showing the results of running git log --oneline --graph --decorate --all. 
+The new origin/master tracking branch now exists.
+
+We now have a new marker in the output! This marker is origin/master and is called a tracking branch. 
+A tracking branch's name includes the shortname of the remote repository as well as the name of the branch. 
+So the tracking branch origin/master is telling us that the remote origin has a master branch that points to commit 9b7d28f (and includes all of the commits before 9b7d28f). 
+This is really helpful because this means we can track the information of the remote Repository right here in our local one!
+
+One very important thing to know is that this origin/master tracking branch is not a live representation of where the branch exists on the remote repository. 
+If a change is made to the remote repository not by us but by someone else, the origin/master tracking branch in our local repository will not move. 
+We have to tell it to go check for any updates and then it will move. We'll look at how to do this in the next section.
+
+
+RECAP
+The git push command is used to send commits from a local repository to a remote repository.
+
+$ git push origin master
+The git push command takes:
+
+the shortname of the remote repository you want to send commits to
+the name of the branch that has the commits you want to send
+
+
+There's several things to note about running this command:
+
+the format is very similar to that of git push - there's counting and compressing and packing of items
+it has the phrase "fast-forward" which means Git did a fast-forward merge (we'll dig into this in just a second)
+it displays information similar to git log --stat where it shows the files that have been changed and how many lines were added or removed in them
+If you don't want to automatically merge the local branch with the tracking branch then you wouldn't use git pull you would use a different command called git fetch. You might want to do this if there are commits on the repository that you don't have but there are also commits on the local repository that the remote one doesn't have either.
+
+Let's take a look at git fetch.
+
+Recap
+If there are changes in a remote repository that you'd like to include in your local repository, then you want to pull in those changes. To do that with Git, you'd use the git pull command. You tell Git the shortname of the remote you want to get the changes from and then the branch that has the changes you want:
+
+$ git pull origin master
+When git pull is run, the following things happen:
+
+the commit(s) on the remote branch are copied to the local repository
+the local tracking branch (origin/master) is moved to point to the most recent commit
+the local tracking branch (origin/master) is merged into the local branch (master)
+Also, changes can be manually added on GitHub (but this is not recommended, so don't do it).
+
